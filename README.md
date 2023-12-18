@@ -1,42 +1,55 @@
-Projeto de Cadastro de Empresas
-Descrição do Projeto
-Este projeto foi desenvolvido utilizando tecnologias modernas para oferecer uma solução eficiente de cadastro de empresas, usuários e vagas. A principal funcionalidade permite que empresas criem novas vagas e usuários se candidatem para essas oportunidades.
+# Projeto de Cadastro de Empresas
 
-Tecnologias Utilizadas
-Java Spring: O framework Spring é a espinha dorsal do projeto, proporcionando uma arquitetura robusta e modular.
-Maven: Utilizado para gerenciamento de dependências e construção do projeto.
-Autenticação com JWT: A autenticação é realizada por meio de JSON Web Tokens (JWT), garantindo segurança e integridade nas transações.
-Spring Hibernate: Integração do Hibernate com o Spring para mapeamento objeto-relacional eficiente.
-Spring JPA: Implementação da JPA (Java Persistence API) do Spring para facilitar o acesso e manipulação de dados no banco.
-Banco de Dados PostgreSQL: O PostgreSQL é utilizado como banco de dados principal para armazenar as informações relevantes.
-Funcionalidades
-Cadastro de Empresas:
+## Descrição do Projeto
 
-Empresas podem se cadastrar no sistema, fornecendo informações essenciais.
-Autenticação segura para garantir acesso controlado às funcionalidades.
-Cadastro de Vagas:
+Este projeto oferece uma solução eficiente para cadastro de empresas, usuários e vagas, usando tecnologias modernas. Empresas podem criar vagas e usuários se candidatam a oportunidades.
 
-Empresas têm a capacidade de criar e gerenciar vagas de emprego.
-Cada vaga inclui detalhes específicos, como descrição, requisitos e benefícios.
-Cadastro de Usuários:
+## Tecnologias Utilizadas
 
-Usuários podem se cadastrar no sistema, fornecendo informações sobre suas habilidades e experiências.
-Autenticação JWT garante segurança durante o processo de login.
-Candidatura a Vagas:
+- **Java Spring:** Framework robusto e modular.
+- **Maven:** Gerenciamento de dependências e construção do projeto.
+- **Autenticação JWT:** Segurança nas transações.
+- **Spring Hibernate:** Integração eficiente com o Hibernate.
+- **Spring JPA:** Facilita o acesso ao banco de dados.
+- **Banco de Dados PostgreSQL:** Armazena informações.
 
-Usuários podem visualizar as vagas disponíveis e se candidatar para aquelas que correspondem às suas habilidades.
-Instruções de Execução
-Pré-requisitos:
+## Funcionalidades
 
-Java e Maven instalados.
-Banco de dados PostgreSQL configurado.
-Configuração do Banco de Dados:
+### Cadastro de Empresas
 
-Execute os scripts SQL fornecidos no diretório "scripts" para criar o esquema e tabelas necessárias.
-Configuração do Projeto:
+- Registro de empresas com informações essenciais.
+- Autenticação segura para controle de acesso.
 
-Modifique o arquivo application.properties para refletir as configurações do seu ambiente, incluindo as credenciais do banco de dados.
-Execução do Projeto:
+### Cadastro de Vagas
 
-Execute o projeto usando o Maven: mvn spring-boot:run.
-O aplicativo estará acessível em http://localhost:8080.
+- Empresas podem criar e gerenciar vagas.
+- Detalhes específicos incluídos, como descrição, requisitos e benefícios.
+
+### Cadastro de Usuários
+
+- Usuários registram habilidades e experiências.
+- Autenticação JWT garante segurança no login.
+
+### Candidatura a Vagas
+
+- Usuários visualizam e se candidatam a vagas compatíveis.
+
+## Instruções de Execução
+
+### Pré-requisitos
+
+- Java e Maven instalados.
+- PostgreSQL configurado.
+
+### Configuração do Banco de Dados
+
+1. Execute os scripts SQL no diretório "scripts" para criar o esquema e tabelas.
+
+### Configuração do Projeto
+
+1. Modifique o arquivo `application.properties` para refletir suas configurações, incluindo as credenciais do banco de dados.
+
+### Execução do Projeto
+
+1. Execute o projeto com o Maven: `mvn spring-boot:run`.
+2. Acesse o aplicativo em http://localhost:8080.
